@@ -9,7 +9,7 @@ const App = () => {
     const [ isUserLoggedIn, setIsUserLoggedIn ] = useState(false);
     const [ isAddOptionsAllowed, setIsAddOptionsAllowed ] = useState(false);
     const [ countries, setCountries] = useState(null);
-    const [ selectedCountry, setSelectedCountry ] = useState('' || 'No country selected');
+    const [ selectedCountry, setSelectedCountry ] = useState('No country selected');
     const [ userRole, setUserRole ] = useState(constants.role.user);
 
     const loginHandler = async () => {
