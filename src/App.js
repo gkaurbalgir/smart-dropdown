@@ -60,8 +60,7 @@ const App = () => {
                   </div>
                   {/* Upon user selecting the country, the parent logs the selected the country. */}
                   <p className="mt-2">Selected country shown in parent component: {selectedCountry} </p>
-                  {isUserLoggedIn && countries && 
-                      <CustomDropdown values={countries}
+                  {<CustomDropdown values={countries}
                                       maxNumberOfItemsInDropdown={constants.numberOfMaxOptionsToBeShownAtOneTime}
                                       isAddOptionsAllowed={isAddOptionsAllowed}
                                       updateSelectedValue={(country) => setSelectedCountry(country)}
